@@ -1,0 +1,196 @@
+@import "responsive.css";
+
+body {
+  background-color: white;
+  color: black;
+  font-size: small;
+  width: 100vw;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 12px 7px;
+  text-decoration: solid;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+
+  color: white;
+
+  background-color: rgb(206, 206, 206);
+}
+
+a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: rgb(87, 2, 2);
+  color: rgb(255, 216, 168);
+}
+
+.logoposition {
+  order: -1;
+  flex-grow: 1;
+  font-size: larger;
+  align-items: center;
+  color: black;
+  justify-items: center;
+  display: block;
+  padding: 12px 7px;
+  text-decoration: solid;
+
+  font-weight: bold;
+}
+
+.buttonrouge {
+  height: 0px 0px;
+  border-radius: 10px;
+  background-color: rgb(87, 2, 2);
+  color: rgb(255, 216, 168);
+}
+
+.parent {
+  background-image: url("couverturemain.jpg");
+  align-items: center;
+  text-align: center;
+  height: auto;
+  margin: -15px 0;
+  overflow: hidden;
+  color: white;
+  justify-items: center;
+  justify-content: space-around;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.menu2 {
+  justify-items: center;
+  align-items: center;
+}
+
+.reservation {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 2px;
+  height: 162px;
+
+  border: 3px solid black;
+  box-shadow: 8px 8px 5px 5px;
+  border-left: 0px;
+  border-bottom: 0px;
+
+  width: auto;
+}
+
+.luff {
+  align-items: center;
+  justify-items: center;
+}
+
+.luffycouverture {
+  height: 190px;
+  overflow: hidden;
+  background-image: url("luffy.jpg");
+  background-size: contain;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(206, 206, 206);
+  display: flex;
+
+  justify-content: center;
+  height: 40px;
+}
+
+.foot {
+  align-items: center;
+}
+
+.principal {
+  border: 2px solid black;
+  box-shadow: 8px 8px 5px 5px;
+  border-top: 0px;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plou {
+  width: 372px;
+  text-align: center;
+  align-items: center;
+  order: -1;
+}
+
+.plac {
+  width: 250px;
+}
+
+.formulaire {
+  display: contents;
+  text-align: center;
+  justify-content: space-evenly;
+  align-content: center;
+  height: auto;
+}
+
+/* responsive */
+@media screen and (max-width: 400px) {
+  ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .logoposition {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  ul {
+    display: block;
+  }
+}
