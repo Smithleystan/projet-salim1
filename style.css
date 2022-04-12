@@ -7,6 +7,8 @@ body {
   width: 100vw;
 }
 
+/* style bar de navigation */
+
 * {
   box-sizing: content-box;
 }
@@ -51,11 +53,19 @@ a:hover {
   font-weight: bold;
 }
 
+/* bouton  */
+
 .buttonrouge {
   height: 0px 0px;
   border-radius: 10px;
   background-color: rgb(87, 2, 2);
   color: rgb(255, 216, 168);
+}
+
+.buttonrouge:hover {
+  cursor: pointer;
+  font-size: large;
+  transition: all 1.5s ease 0.2s;
 }
 
 .parent {
@@ -76,12 +86,10 @@ a:hover {
   justify-content: center;
   height: auto;
 }
-
 .menu2 {
   justify-items: center;
   align-items: center;
 }
-
 .reservation {
   align-items: center;
   justify-content: center;
@@ -158,9 +166,52 @@ a:hover {
   height: auto;
 }
 
+/* page boutique */
+
 .titleitems {
   display: flex;
   justify-content: center;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titleitems {
+  font-size: xx-large;
+  color: red;
+  transition: all 2s ease 0.2s;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+}
+
+.buttoncommander {
+  border-radius: 15px;
+  height: 35px;
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+.buttoncommander:hover {
+  margin-left: 100px;
+  text-decoration: line-through;
+  transition: all 2s ease 0.2s;
+  transform: translate(10rem);
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 /* responsive */
@@ -200,20 +251,9 @@ a:hover {
   }
 }
 
-.article {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 @media screen and (max-width: 1000px) {
   .article {
     padding: 10px;
     justify-content: space-around;
   }
-}
-
-img {
-  justify-items: center;
 }
