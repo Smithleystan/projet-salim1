@@ -158,6 +158,11 @@ a:hover {
   height: auto;
 }
 
+.titleitems {
+  display: flex;
+  justify-content: center;
+}
+
 /* responsive */
 @media screen and (max-width: 400px) {
   ul {
